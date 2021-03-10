@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,53 @@
     <title>git</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <article class="container">
+        <header class="header">
+            <h1 class="red">git and github</h1>
+            <a href="https://github.com/shyngy">
+                <img class="header__git-icon" src="images/github.svg" alt="github">
+                <strong class="git__link">shyngy.github</strong>
+            </a>
+        </header>
+        <div class="content">
+            <h3>Подключение git в проект</h3>
+            <code class="code">&gt; git init</code>
+            <span class="desc">Установит git в проект. Сам файл невидимый, можно к нему перейти:
+                <strong>cd .git</strong></span>
+            <code class="gitstate">&gt; git status</code>
+            <span>Статус гита:
+                <div>
+                    <strong>branch</strong> - ветвление проекта<br>
+                    <strong>commit</strong> - фиксация проекта<br>
+                    <strong>tracked - untracked</strong> - отслеживание файлов<br>
+                    <strong>gitignore</strong> - игнорирует файлы
+                </div>
+            </span>
+            
+            <h3>Основы git</h3>
+          
+            <code>&gt; git add [file]</code><span>Добавить слежку за файлом</span>
+            <code>&gt; git add .</code>
+            <span>Добавить все файлы и отслеживать</span>
+            <code>&gt; git rm --cached [file]</code>
+            <span>Убрать слежку за файлом</span>
+            <code>&gt; git commit -m "messages"</code>
+            <span>Точка для возврата в проект. "-m" - оставляет комментарии</span>
+            <code>.gitignore</code>
+            <span>создав такой файл в проекте можно игнорировать файлы документы и тд.</span>
+            <h3>branch - ветки</h3>
+            <code>&gt;git branch</code><span>вывод ветки</span>
+            <code>&gt;git branch [name]</code><span>создание новой ветки</span>
+            <code>&gt;git checkout -b [name]</code><span>создание и переход в ветку</span>
+            <code>&gt;git branch -D [name]</code><span>удаление ветки</span>
+            <code>&gt;git checkout [master]</code><span>переключение на другую ветвь</span>
+            <code>&gt;git merge [name]</code><span>брать данные с других веток</span>
+        </div>
+        
+    </article>
+    <script src="main.js"></script>
 </body>
+
 </html>

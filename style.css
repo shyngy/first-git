@@ -5,5 +5,86 @@
 }
 body{
     font-family: sans-serif;
+    margin-top: 10px;
+}
+h1{
+    font-size: 25px;
+    margin-top:5px;
     
 }
+h1::first-letter{
+    color: red;
+
+}
+h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+span{
+    display: inline-block;
+}
+code{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 6px;
+    border-radius: 3px;
+    font-size: 18px;
+ 
+    display:block;
+    
+    
+}
+h3{
+    margin: 20px 0;
+}
+strong{
+    font-size: 18px;
+}
+.desc{
+    display: inline-block;
+    padding: 6px;
+    margin-left:5% ;
+   
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px ;
+ 
+  
+}
+.header__git-icon{
+    width: 25px;
+}
+a{
+    text-decoration: none;
+    color:initial;
+}
+.git__link{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    margin-top: 4px;
+}
+
+.git__link:hover{
+    text-decoration: underline;
+    color: rgb(61, 61, 168);
+}
+
+.content{
+    max-width: 980px;
+    margin: 0 auto;
+    
+}
+.desc{
+    
+}
+
